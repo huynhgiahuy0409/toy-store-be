@@ -14,7 +14,7 @@ import com.laptrinhjavaweb.service.IAgeService;
 
 @RestController
 @RequestMapping(value = "/api")
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "https://toy-store-fe.herokuapp.com")
 public class AgeController {
  
 	@Autowired

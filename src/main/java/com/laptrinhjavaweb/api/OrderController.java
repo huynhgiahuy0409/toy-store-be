@@ -36,7 +36,7 @@ import com.laptrinhjavaweb.service.IUserService;
 
 @RestController
 @RequestMapping(value = "/api/order")
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "https://toy-store-fe.herokuapp.com/")
 public class OrderController {
 	@Autowired
 	private IUserService userService;
