@@ -125,8 +125,8 @@ public class ProductController {
 
 	@GetMapping("/product-page/search")
 	private ResponseEntity<PaginationResult<ProductDTO>> searchProducts(
-			@RequestParam(required = true) String searchValue, @RequestParam int page, @RequestParam int limit) {
-		Pageable pageable = new PageRequest(page, limit);
+			@RequestParam(required = true) String searchValue, @RequestParam int pageIndex, @RequestParam int pageSize) {
+		Pageable pageable = new PageRequest(pageIndex, pageSize);
 		List<ProductDTO> listDTO = this.productService.searchProducts(searchValue, pageable);
 		PaginationResult<ProductDTO> result = new PaginationResult<ProductDTO>();
 		result.setItems(listDTO);
