@@ -32,7 +32,7 @@ import com.laptrinhjavaweb.util.JWTUtil;
 
 @RestController
 @RequestMapping(value = "/api")
-@CrossOrigin(origins = "https://toy-store-fe.herokuapp.com/")
+@CrossOrigin(origins = "https://toy-store-fe.herokuapp.com")
 public class AuthController {
 	/* SERVICE */
 	@Autowired

@@ -14,7 +14,7 @@ import com.laptrinhjavaweb.service.IUserObjectService;
 
 @RestController
 @RequestMapping(value = "/api")
-@CrossOrigin(origins = "https://toy-store-fe.herokuapp.com/")
+@CrossOrigin(origins = "https://toy-store-fe.herokuapp.com")
 public class UseObjectController {
 	@Autowired
 	IUserObjectService userObjectService;

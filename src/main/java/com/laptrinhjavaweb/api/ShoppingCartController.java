@@ -29,7 +29,7 @@ import com.laptrinhjavaweb.service.IShoppingCartService;
 import com.laptrinhjavaweb.service.IUserService;
 
 @RestController
-@CrossOrigin(origins = "https://toy-store-fe.herokuapp.com/")
+@CrossOrigin(origins = "https://toy-store-fe.herokuapp.com")
 @RequestMapping(value = "/api/cart")
 public class ShoppingCartController {
 	@Autowired
