@@ -18,7 +18,7 @@ import com.laptrinhjavaweb.service.IUserService;
 @RestController
 @RequestMapping(value = "/api/user")
 //@CrossOrigin(origins = "https://toy-store-fe.herokuapp.com")
-@CrossOrigin(origins = SystemContance.LOCAL_HOST_4200)
+@CrossOrigin(origins = "http://localhost:4200")
 public class UserController {
 	@Autowired
 	IUserService userSerivce;
