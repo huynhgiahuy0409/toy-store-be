@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.laptrinhjavaweb.constance.SystemContance;
 import com.laptrinhjavaweb.converter.UserConverter;
 import com.laptrinhjavaweb.dto.UserDTO;
 import com.laptrinhjavaweb.entity.UserEntity;
@@ -17,8 +16,7 @@ import com.laptrinhjavaweb.service.IUserService;
 
 @RestController
 @RequestMapping(value = "/api/user")
-//@CrossOrigin(origins = "https://toy-store-fe.herokuapp.com")
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "https://toy-store-fe.herokuapp.com")
 public class UserController {
 	@Autowired
 	IUserService userSerivce;

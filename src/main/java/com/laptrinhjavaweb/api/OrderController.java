@@ -17,7 +17,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.laptrinhjavaweb.constance.SystemContance;
 import com.laptrinhjavaweb.dto.CreditCardDTO;
 import com.laptrinhjavaweb.dto.OrderDTO;
 import com.laptrinhjavaweb.dto.UserDTO;
@@ -37,8 +36,7 @@ import com.laptrinhjavaweb.service.IUserService;
 
 @RestController
 @RequestMapping(value = "/api/order")
-//@CrossOrigin(origins = "https://toy-store-fe.herokuapp.com")
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "https://toy-store-fe.herokuapp.com")
 public class OrderController {
 	@Autowired
 	private IUserService userService;

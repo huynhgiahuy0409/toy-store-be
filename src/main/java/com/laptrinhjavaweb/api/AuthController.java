@@ -19,7 +19,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.laptrinhjavaweb.config.CustomUserDetailsService;
-import com.laptrinhjavaweb.constance.SystemContance;
 import com.laptrinhjavaweb.dto.JwtDTO;
 import com.laptrinhjavaweb.dto.UserDTO;
 import com.laptrinhjavaweb.dto.auth.AuthenticationRequestDTO;
@@ -33,8 +32,7 @@ import com.laptrinhjavaweb.util.JWTUtil;
 
 @RestController
 @RequestMapping(value = "/api")
-//@CrossOrigin(origins = "https://toy-store-fe.herokuapp.com")
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "https://toy-store-fe.herokuapp.com")
 public class AuthController {
 	/* SERVICE */
 	@Autowired
