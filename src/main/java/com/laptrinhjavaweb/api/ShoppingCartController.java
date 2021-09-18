@@ -18,6 +18,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.laptrinhjavaweb.constance.SystemContance;
 import com.laptrinhjavaweb.dto.OrderItemDTO;
 import com.laptrinhjavaweb.entity.OrderItemEntity;
 import com.laptrinhjavaweb.entity.ProductEntity;
@@ -29,8 +30,9 @@ import com.laptrinhjavaweb.service.IShoppingCartService;
 import com.laptrinhjavaweb.service.IUserService;
 
 @RestController
-@CrossOrigin(origins = "https://toy-store-fe.herokuapp.com")
 @RequestMapping(value = "/api/cart")
+//@CrossOrigin(origins = "https://toy-store-fe.herokuapp.com")
+@CrossOrigin(origins = SystemContance.LOCAL_HOST_4200)
 public class ShoppingCartController {
 	@Autowired
 	private IUserService userService;

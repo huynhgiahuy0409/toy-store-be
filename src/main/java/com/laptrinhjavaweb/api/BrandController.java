@@ -9,12 +9,14 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.laptrinhjavaweb.constance.SystemContance;
 import com.laptrinhjavaweb.dto.BrandDTO;
 import com.laptrinhjavaweb.service.IBrandService;
 
 @RestController
 @RequestMapping(value = "/api")
-@CrossOrigin(origins = "https://toy-store-fe.herokuapp.com")
+//@CrossOrigin(origins = "https://toy-store-fe.herokuapp.com")
+@CrossOrigin(origins = SystemContance.LOCAL_HOST_4200)
 public class BrandController {
 	@Autowired
 	IBrandService brandService;

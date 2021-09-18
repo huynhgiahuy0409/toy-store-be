@@ -18,6 +18,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.laptrinhjavaweb.constance.SystemContance;
 import com.laptrinhjavaweb.dto.CouponDTO;
 import com.laptrinhjavaweb.dto.PaginationResult;
 import com.laptrinhjavaweb.dto.ProductDTO;
@@ -28,7 +29,8 @@ import com.laptrinhjavaweb.service.IProductService;
 
 @RestController
 @RequestMapping(value = "/api")
-@CrossOrigin(origins = "https://toy-store-fe.herokuapp.com")
+//@CrossOrigin(origins = "https://toy-store-fe.herokuapp.com")
+@CrossOrigin(origins = SystemContance.LOCAL_HOST_4200)
 public class ProductController {
 	@Autowired
 	private IProductService productService;

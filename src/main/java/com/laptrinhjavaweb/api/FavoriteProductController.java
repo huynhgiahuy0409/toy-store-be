@@ -22,6 +22,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.laptrinhjavaweb.constance.SystemContance;
 import com.laptrinhjavaweb.dto.FavoriteProductDTO;
 import com.laptrinhjavaweb.dto.PaginationResult;
 import com.laptrinhjavaweb.entity.FavoriteProductEntity;
@@ -33,7 +34,8 @@ import com.laptrinhjavaweb.service.IUserService;
 
 @RestController
 @RequestMapping("/api/favorite-product")
-@CrossOrigin(origins = "https://toy-store-fe.herokuapp.com")
+//@CrossOrigin(origins = "https://toy-store-fe.herokuapp.com")
+@CrossOrigin(origins = SystemContance.LOCAL_HOST_4200)
 public class FavoriteProductController {
 	@Autowired
 	private IProductService productService;

@@ -9,14 +9,16 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.laptrinhjavaweb.constance.SystemContance;
 import com.laptrinhjavaweb.dto.AgeDTO;
 import com.laptrinhjavaweb.service.IAgeService;
 
 @RestController
 @RequestMapping(value = "/api")
-@CrossOrigin(origins = "https://toy-store-fe.herokuapp.com")
+//@CrossOrigin(origins = "https://toy-store-fe.herokuapp.com")
+@CrossOrigin(origins = SystemContance.LOCAL_HOST_4200)
 public class AgeController {
- 
+	
 	@Autowired
 	private IAgeService ageService;
 
