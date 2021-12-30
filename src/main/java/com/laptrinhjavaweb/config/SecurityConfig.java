@@ -50,13 +50,14 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
 	@Override
 	public void configure(HttpSecurity http) throws Exception {
-		System.out.println("SecurityConfig");
 		http.csrf().disable().authorizeRequests().antMatchers("/admin").hasAnyAuthority("SUPPER_USER")
 				.antMatchers("/api/authenticate").permitAll().and().exceptionHandling()
 				.authenticationEntryPoint(unauthorizedHandler);
 //				.sessionManagement()
 //				.sessionCreationPolicy(SessionCreationPolicy.STATELESS);
 		http.addFilterBefore(jwtRequestFilter, UsernamePasswordAuthenticationFilter.class);
+		
+		
 	}
 
 }

@@ -28,7 +28,7 @@ import com.laptrinhjavaweb.service.IProductService;
 
 @RestController
 @RequestMapping(value = "/api")
-@CrossOrigin(origins = "https://toy-store-fe.herokuapp.com")
+@CrossOrigin(origins = "*")
 public class ProductController {
 	@Autowired
 	private IProductService productService;

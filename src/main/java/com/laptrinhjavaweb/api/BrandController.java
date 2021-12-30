@@ -14,7 +14,7 @@ import com.laptrinhjavaweb.service.IBrandService;
 
 @RestController
 @RequestMapping(value = "/api")
-@CrossOrigin(origins = "https://toy-store-fe.herokuapp.com")
+@CrossOrigin(origins = "http://localhost:4200")
 public class BrandController {
 	@Autowired
 	IBrandService brandService;
